@@ -1,0 +1,134 @@
+style: |
+  @import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Sans:wght@300;400;500&family=IBM+Plex+Mono:wght@400&display=swap');
+
+  :root {
+    --color-primary:  #1e2b3c;
+    --color-accent:   #1d4e7a;
+    --color-accent2:  #c07d2b;
+    --color-surface:  #f2f4f7;
+    --color-muted:    #5e6e82;
+  }
+
+  section {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 22px;
+    background: var(--color-surface);
+    color: var(--color-primary);
+    padding: 48px 60px;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Crimson Pro', serif;
+    font-weight: 600;
+    letter-spacing: 0em;
+  }
+
+  h1 { font-size: 2.5em; color: var(--color-primary); }
+  h2 { font-size: 1.65em; color: var(--color-accent); border-bottom: 2px solid var(--color-accent2); padding-bottom: 5px; display: inline-block; }
+  h3 { font-size: 1.1em; color: var(--color-muted); font-weight: 400; font-style: italic; }
+
+  strong { color: var(--color-accent); }
+  em { color: var(--color-accent2); font-style: italic; font-weight: 500; }
+
+  code {
+    background: #253040;
+    color: #cdd9e5;
+    border-radius: 3px;
+    padding: 2px 7px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 0.8em;
+  }
+
+  pre {
+    background: #1e2b3c;
+    color: #cdd9e5;
+    border-radius: 6px;
+    padding: 22px 26px;
+    font-size: 0.73em;
+    font-family: 'IBM Plex Mono', monospace;
+    border-left: 4px solid var(--color-accent2);
+    box-shadow: 0 2px 14px rgba(0,0,0,0.15);
+  }
+
+  pre code { background: transparent; padding: 0; font-size: 1em; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
+
+  th {
+    background: var(--color-accent);
+    color: #f2f4f7;
+    padding: 10px 14px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    font-size: 0.88em;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  td { padding: 9px 14px; border-bottom: 1px solid #d0d8e2; }
+  tr:nth-child(even) td { background: #e5eaf0; }
+
+  blockquote {
+    border-left: 4px solid var(--color-accent);
+    background: #dce6f0;
+    padding: 16px 24px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+    font-style: italic;
+    font-family: 'Crimson Pro', serif;
+    color: #1d3a5c;
+    font-size: 1em;
+  }
+
+  ul li, ol li { margin-bottom: 8px; line-height: 1.6; }
+
+  section.lead {
+    display: flex; flex-direction: column;
+    justify-content: center; align-items: center; text-align: center;
+  }
+  section.lead h1 { font-size: 3em; }
+
+  header, footer { font-family: 'IBM Plex Sans', sans-serif; font-size: 13px; color: var(--color-muted); }
+
+  .columns   { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; align-items: start; }
+  .columns-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px; }
+
+  .card {
+    background: #ffffff;
+    border-radius: 4px;
+    padding: 18px 22px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+    border-top: 3px solid var(--color-accent);
+    border: 1px solid #d0d8e2;
+  }
+
+  .tag {
+    display: inline-block;
+    background: var(--color-accent);
+    color: #f2f4f7;
+    border-radius: 2px;
+    padding: 2px 9px;
+    font-size: 0.67em;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+
+  .highlight-box {
+    background: linear-gradient(135deg, #1d4e7a 0%, #12324f 100%);
+    color: #cdd9e5;
+    border-radius: 4px;
+    padding: 20px 28px;
+    margin: 12px 0;
+    border-left: 4px solid var(--color-accent2);
+  }
+
+  .highlight-box h3 { color: #c07d2b; font-style: normal; }
+  .highlight-box p  { color: #cdd9e5; margin: 0; }
+
+  section.invert-dark { background: #1e2b3c; color: #cdd9e5; }
+  section.invert-dark h2 { color: #6aaed6; border-color: #c07d2b; }
+  section.invert-dark blockquote { background: #253040; color: #a8bfd4; border-color: #c07d2b; }
