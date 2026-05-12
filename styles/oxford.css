@@ -135,3 +135,78 @@
   section.invert-dark { background: #1a1f2e; color: #e8e4d9; }
   section.invert-dark h2 { color: #c9a84c; border-color: #7b1d3a; }
   section.invert-dark blockquote { background: #252b3d; color: #d4c9b0; border-color: #c9a84c; }
+
+
+  /* Superscript inline citation: text<sup class="cite">1</sup> */
+  sup.cite {
+    color: var(--color-accent);
+    font-size: 0.65em;
+    font-weight: 700;
+    vertical-align: super;
+    line-height: 0;
+    margin-left: 1px;
+    cursor: default;
+  }
+
+  /* Footnote bar at bottom of slide */
+  .footnotes {
+    position: absolute;
+    bottom: 42px;
+    left: 60px;
+    right: 60px;
+    border-top: 1px solid #d0d0cc;
+    padding-top: 7px;
+    font-size: 0.6em;
+    color: var(--color-muted);
+    font-style: italic;
+    line-height: 1.5;
+  }
+
+  .footnotes ol, .footnotes ul {
+    margin: 0;
+    padding-left: 1.4em;
+  }
+
+  .footnotes li {
+    margin-bottom: 2px;
+  }
+
+  /* Inline reference chip: <span class="ref">Author, 2024</span> */
+  span.ref {
+    display: inline-block;
+    background: #ededea;
+    border: 1px solid #d0cdc7;
+    border-radius: 3px;
+    padding: 0px 7px;
+    font-size: 0.72em;
+    color: var(--color-muted);
+    font-style: italic;
+    vertical-align: middle;
+    margin: 0 2px;
+    line-height: 1.6;
+  }
+
+  /* Full reference list block (e.g. last slide) */
+  .references {
+    font-size: 0.72em;
+    color: var(--color-muted);
+    line-height: 1.6;
+    border-left: 3px solid var(--color-accent);
+    padding-left: 16px;
+    margin-top: 8px;
+  }
+
+  .references p {
+    margin: 4px 0;
+  }
+
+  /* DOI / URL link style inside references */
+  .references a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  .references a:hover {
+    text-decoration: underline;
+  }

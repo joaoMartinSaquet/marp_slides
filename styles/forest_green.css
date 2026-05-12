@@ -1,4 +1,4 @@
-style: |
+
   @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
 
   :root {
@@ -128,3 +128,44 @@ style: |
   section.invert-dark { background: #1c2b1e; color: #d4e8d5; }
   section.invert-dark h2 { color: #74c69d; border-color: #b5832a; }
   section.invert-dark blockquote { background: #243325; color: #b7d4b9; border-color: #b5832a; }
+
+  /* Inline reference chip: <span class="ref">Author, 2024</span> */
+  span.ref {
+    display: inline-block;
+    background: #ededea;
+    border: 1px solid #d0cdc7;
+    border-radius: 3px;
+    padding: 0px 7px;
+    font-size: 0.72em;
+    color: var(--color-muted);
+    font-style: italic;
+    vertical-align: middle;
+    margin: 0 2px;
+    line-height: 1.6;
+  }
+
+  /* Full reference list block (e.g. last slide) */
+  .references {
+    font-size: 0.72em;
+    color: var(--color-muted);
+    line-height: 1.6;
+    border-left: 3px solid var(--color-accent);
+    padding-left: 16px;
+    margin-top: 8px;
+  }
+
+  .references p {
+    margin: 4px 0;
+  }
+
+  /* DOI / URL link style inside references */
+  .references a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  .references a:hover {
+    text-decoration: underline;
+  }
+

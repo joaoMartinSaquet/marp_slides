@@ -132,3 +132,43 @@ style: |
   section.invert-dark { background: #1e2b3c; color: #cdd9e5; }
   section.invert-dark h2 { color: #6aaed6; border-color: #c07d2b; }
   section.invert-dark blockquote { background: #253040; color: #a8bfd4; border-color: #c07d2b; }
+
+    /* Inline reference chip: <span class="ref">Author, 2024</span> */
+  span.ref {
+    display: inline-block;
+    background: #ededea;
+    border: 1px solid #d0cdc7;
+    border-radius: 3px;
+    padding: 0px 7px;
+    font-size: 0.72em;
+    color: var(--color-muted);
+    font-style: italic;
+    vertical-align: middle;
+    margin: 0 2px;
+    line-height: 1.6;
+  }
+
+  /* Full reference list block (e.g. last slide) */
+  .references {
+    font-size: 0.72em;
+    color: var(--color-muted);
+    line-height: 1.6;
+    border-left: 3px solid var(--color-accent);
+    padding-left: 16px;
+    margin-top: 8px;
+  }
+
+  .references p {
+    margin: 4px 0;
+  }
+
+  /* DOI / URL link style inside references */
+  .references a {
+    color: var(--color-accent);
+    text-decoration: none;
+    font-style: normal;
+  }
+
+  .references a:hover {
+    text-decoration: underline;
+  }

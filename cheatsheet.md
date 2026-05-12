@@ -8,7 +8,7 @@ footer: "Your footer (it can be anything)"
 
 ---
 <style>
-@import "styles/forest_green.css";
+@import "styles/iee_style.css";
 </style>
 <!-- ══════════════════════════════════════════════════════ -->
 <!--  SLIDE 1 — TITLE                                      -->
@@ -180,7 +180,7 @@ Use `<style scoped>` inside a slide to override CSS **only for that slide**.
 - Special font sizes for dense slides
 - Custom layout just for one slide
 - Override global `.card` or `.columns` width
-
+  
 ### Tip
 
 Combine with `<!-- _backgroundColor -->` for full per-slide branding — useful for section dividers.
@@ -1003,6 +1003,16 @@ Without it, local `images/` paths are blocked by Chrome's security sandbox.
 | Per-slide CSS | `<style scoped> … </style>` |
 
 ---
+## References
+
+<div class="references">
+<p>[1] LeCun, Y., Bengio, Y., & Hinton, G. (2015). Deep learning. <em>Nature</em>, 521, 436–444. <a href="https://doi.org/10.1038/nature14539">doi:10.1038/nature14539</a></p>
+<p>[2] Vaswani, A. et al. (2017). Attention is all you need. <em>Advances in Neural Information Processing Systems</em>, 30.</p>
+<p>[3] Brown, T. et al. (2020). Language models are few-shot learners. <em>NeurIPS</em>.</p>
+</div>
+
+----
+
 
 <!-- ══════════════════════════════════════════════════════ -->
 <!--  SLIDE 25 — CONCLUSION                                -->
